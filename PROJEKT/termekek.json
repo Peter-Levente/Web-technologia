@@ -1,47 +1,151 @@
 [
+    
     {
+        "id": 1,
         "kep": "https://gfx.r-gol.com/media/res/products/493/180493/465x605/ib0036_1.webp",
         "nev": "Pulóver adidas Real Madrid 23/24 Training Top",
         "ar": 299.99
     },
     {
+        "id": 2,
         "kep": "https://gfx.r-gol.com/media/res/products/606/183606/465x605/fd7117-061_1.webp",
         "nev": "Nike FC Liverpool FC 23/24 Strike Track Suit",
         "ar": 549.99
     },
     {
+        "id": 3,
         "kep": "https://gfx.r-gol.com/media/res/products/572/180572/465x605/iq0609_1.webp",
         "nev": "Pulóver adidas FC Bayern 23/24 Training Top",
         "ar": 274.99
     },
     {
+        "id": 4,
         "kep": "https://shop.fradi.hu/api/uploads/0c00/0d00/0c00/0c00/3dc0/6760/7120/7030/6810/6818/6448/6848/7d88/7e08/7880/250x.jpg",
         "nev": "Ferencváros FTC Nike férfi fekete melegítőfelső",
         "ar": 219.15
     },
     {
+        "id": 5,
         "kep": "https://fanshop.sepsiosk.ro/cdn/shop/files/DF108D68-25F3-4BEC-8DB5-3AF8456476E7.jpg?v=1698248329&width=600",
         "nev": "Sepsi OSK Cipzáros, Unisex kapucnis pulóver",
         "ar": 135.00
     },
     {
+        "id": 6,
         "kep": "https://soldigo.azureedge.net/images/15861/600x600/pcebmpioik.jpg",
         "nev": "FK Csíkszereda Ultrakönnyű Prémium Pamut Anorák│Unisex",
         "ar": 93.00
     },
     {
+        "id": 7,
         "kep": "https://gfx.r-gol.com/media/res/products/296/185296/465x605/fn4684-437_2.jpg",
         "nev": "Pulóver Nike Tottenham Hotspur 23/24 Strike",
         "ar": 328.85
     },
     {
+        "id": 8,
         "kep": "https://gfx.r-gol.com/media/res/products/605/183605/465x605/fj5427-620_1.webp",
         "nev": "Pulóver Nike FC Barcelona 23/24 Strike",
         "ar": 612.50
     },
     {
-        "kep": "https://webshop.mlsz.hu/userfiles/7/3/737c616fb5ad1cb40223a5c2650cd93e_thumb_712x712.jpg",
-        "nev": "Adidas Tiro 24 magyar válogatott melegítő",
-        "ar": 593.03
-    }
+        "id": 9,
+        "kep": "https://gfx.r-gol.com/media/res/products/322/159322/465x605/hr3796_1.jpg",
+        "nev": "Mez adidas Real Madrid 23/24 Home Replica",
+        "ar": 462.67
+    },
+    {
+        "id": 10,
+        "kep": "https://gfx.r-gol.com/media/res/products/340/162340/465x605/dx2618-688_1.jpg",
+        "nev": "Mez Nike Liverpool FC 23/24 Home Vapor Match",
+        "ar": 694.08
+    },
+    {
+        "id": 11,
+        "kep": "https://gfx.r-gol.com/media/res/products/321/159321/465x605/hr3729_1.jpg",
+        "nev": "Mez adidas FC Bayern 23/24 Home Authentic",
+        "ar": 552.66
+    },
+    {
+        "id": 12,
+        "kep": "https://shop.fradi.hu/api/uploads/0300/0280/0280/0380/0380/0648/c66c/c666/8fb6/cec6/cec4/3ec0/1ee0/1e60/1f30/1e30/250x.jpg",
+        "nev": "Ferencváros Nike férfi hazai mérkőzés mez",
+        "ar": 321.26
+    },
+    {
+        "id": 13,
+        "kep": "https://fanshop.sepsiosk.ro/cdn/shop/files/IMG-5727.jpg?v=1711289608&width=493",
+        "nev": "DIDAS UNISEX SEPSI OSK JÁTÉKMEZ",
+        "ar": 195.00
+    },
+    {
+        "id": 14,
+        "kep": "https://soldigo.azureedge.net/images/15861/zaxa2brkvx.png",
+        "nev": "FK Csíkszereda hazai mez",
+        "ar": 93.00
+    },
+    {
+        "id": 15,
+        "kep": "https://gfx.r-gol.com/media/res/products/680/162680/465x605/dx2625-101_1.jpg",
+        "nev": "Mez Nike Tottenham Hotspur 23/24 Home Vapor Match",
+        "ar": 694.08
+    },
+    {
+        "id": 16,
+        "kep": "https://gfx.r-gol.com/media/res/products/811/179811/465x605/dx2687-456_6.jpg",
+        "nev": "Mez Nike FC Barcelona 23/24 Home Stadium",
+        "ar": 597.66
+    },
+    {
+        "id": 17,
+        "kep": "https://gfx.r-gol.com/media/res/products/563/184563/465x605/fj2579-001_6.webp",
+        "nev": "Nike Phantom Luna II Elite AG-PRO",
+        "ar": 1554.79
+    },
+    {
+        "id": 18,
+        "kep": "https://gfx.r-gol.com/media/res/products/759/185759/465x605/ie2416_1.webp",
+        "nev": "Adidas X Crazyfast+ FG",
+        "ar": 1349.08
+    },
+    {
+        "id": 19,
+        "kep": "https://gfx.r-gol.com/media/res/products/979/187979/465x605/107828-01_1.webp",
+        "nev": "Puma Future 7 Ultimate Rush FG/AG",
+        "ar": 1086.95
+    },
+    {
+        "id": 20,
+        "kep": "https://gfx.r-gol.com/media/res/products/513/187513/465x605/fd0250-700_1.webp",
+        "nev": "Nike Zoom Mercurial Superfly 9 Elite SG-PRO Player Edition",
+        "ar": 1413.33
+    }, 
+    {
+        "id": 21,
+        "kep": "https://gfx.r-gol.com/media/res/products/924/182924/465x605/iq3682-5_1.webp",
+        "nev": "Labda adidas Fussballliebe EURO 2024 Pro méret 5",
+        "meret": 5,
+        "ar": 501.01
+    },
+    {
+        "id": 22,
+        "kep": "https://gfx.r-gol.com/media/res/products/969/186969/465x605/in9340-5_1.webp",
+        "nev": "Labda adidas UCL Pro 23/24 méret 5",
+        "meret": 5,
+        "ar": 558.83
+    },
+    {
+        "id": 23,
+        "kep": "https://gfx.r-gol.com/media/res/products/347/184347/465x605/fb2979-101-5_1.webp",
+        "nev": "Labda Nike Nike Premier League Flight méret 5",
+        "meret": 5,
+        "ar": 610.23
+    },
+    {
+        "id": 24,
+        "kep": "https://gfx.r-gol.com/media/res/products/901/181901/465x605/084106-01-5_1.webp",
+        "nev": "Labda Puma Orbita 1 La Liga méret 5",
+        "meret": 5,
+        "ar": 411.06
+    }    
 ]
