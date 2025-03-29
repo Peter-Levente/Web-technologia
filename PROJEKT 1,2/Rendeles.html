@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Football Shop-Rendelés leadása</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="PROJEKT.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <nav class="fejlec">
+                <div class="cim">
+                    <h1>Football Shop</h1>
+
+                    <a id="kosar-ikon">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </a>
+
+                    <a href="index.html" id="fooldal-ikon">
+                        <i class="fa-solid fa-house"></i>
+                    </a>
+                </div>
+                <div class="termek-item-cim">
+                    <h3>RENDELÉS VÉGREHAJTÁS</h3>
+                </div>
+
+                <div class="kosar" id="kosar"></div>
+            </nav>
+        </header>
+        <main>
+            <form id="rendelesForm" onsubmit="return FormEllenorzes();">
+                <h2>Termék rendelése</h2>
+                <p>"Pillanatnyi rendeléséhez kérjük, töltse ki az alábbi űrlapot. A személyes adatai biztonságban vannak
+                    nálunk, és azokat kizárólag a megrendelés feldolgozására használjuk. Kérjük, gondosan adja meg az
+                    adatokat, hogy pontosan és zökkenőmentesen tudjuk teljesíteni rendelését. Köszönjük, hogy minket
+                    választott !" Ez a szöveg bevezeti a felhasználót az űrlap kitöltésének folyamatába, és bizalmat
+                    épít az
+                    adatvédelemmel kapcsolatban.</p>
+
+                <label for="nev">Név:</label>
+                <input type="text" id="nev" name="nev">
+
+                <label for="email">E-mail cím:</label>
+                <input type="text" id="email" name="email">
+
+                <label for="telefonszam">Telefonszám:</label>
+                <input type="tel" id="telefonszam" name="telefonszam">
+
+                <label for="megye">Megye:</label>
+                <select id="megye" name="megye">
+                    <option value="Alba">Alba</option>
+                    <option value="Arad">Arad</option>
+                    <option value="Argeș">Argeș</option>
+                    <option value="Bacău">Bacău</option>
+                    <option value="Bihor">Bihor</option>
+                    <option value="Bistrița-Năsăud">Bistrița-Năsăud</option>
+                    <option value="Botoșani">Botoșani</option>
+                    <option value="Brăila">Brăila</option>
+                    <option value="Brașov">Brașov</option>
+                    <option value="București">București</option>
+                    <option value="Buzău">Buzău</option>
+                    <option value="Călărași">Călărași</option>
+                    <option value="Caraș-Severin">Caraș-Severin</option>
+                    <option value="Cluj">Cluj</option>
+                    <option value="Constanța">Constanța</option>
+                    <option value="Covasna">Covasna</option>
+                    <option value="Dâmbovița">Dâmbovița</option>
+                    <option value="Dolj">Dolj</option>
+                    <option value="Galați">Galați</option>
+                    <option value="Giurgiu">Giurgiu</option>
+                    <option value="Gorj">Gorj</option>
+                    <option value="Harghita">Harghita</option>
+                    <option value="Hunedoara">Hunedoara</option>
+                    <option value="Ialomița">Ialomița</option>
+                    <option value="Iași">Iași</option>
+                    <option value="Ilfov">Ilfov</option>
+                    <option value="Maramureș">Maramureș</option>
+                    <option value="Mehedinți">Mehedinți</option>
+                    <option value="Mureș">Mureș</option>
+                    <option value="Neamț">Neamț</option>
+                    <option value="Olt">Olt</option>
+                    <option value="Prahova">Prahova</option>
+                    <option value="Satu Mare">Satu Mare</option>
+                    <option value="Sălaj">Sălaj</option>
+                    <option value="Sibiu">Sibiu</option>
+                    <option value="Suceava">Suceava</option>
+                    <option value="Teleorman">Teleorman</option>
+                    <option value="Timiș">Timiș</option>
+                    <option value="Tulcea">Tulcea</option>
+                    <option value="Vâlcea">Vâlcea</option>
+                    <option value="Vaslui">Vaslui</option>
+                    <option value="Vrancea">Vrancea</option>
+                </select>
+
+                <label for="telepules">Település:</label>
+                <input type="text" id="telepules" name="telepules">
+
+                <label for="iranyitoszam">Irányítószám:</label>
+                <input type="text" id="iranyitoszam" name="iranyitoszam">
+
+                <label for="lakcim">Lakcím:</label>
+                <input type="text" id="lakcim" name="lakcim">
+
+                <label for="fizetes">Fizetési mód:</label>
+                <select id="fizetes" name="fizetes">
+                    <option value="bankkártya">Bankkártya</option>
+                    <option value="utánvétel">Utánvétel</option>
+                    <option value="átutalás">Átutalás</option>
+                </select>
+
+                <input type="submit" value="Rendelés leadása" id="submitGomb">
+        </main>
+
+        <footer>
+            <div class="lablec">
+                <p>Minden jog fenntartva ©Football Shop 2024</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="PROJEKT.js"></script>
+</body>
+
+</html>

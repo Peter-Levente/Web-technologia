@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Labor 7</title>
+    <style>
+        /* Szelektorok
+            tag szerint: input
+            class szerint: .oszalyneve vagy input.osztaly neve
+            attributum szerint: [attrNev="ertek"] (minden olyan elem, ami rendelkezik attrNev atributummal es ennek erteke "ertek")
+            kombinalva (beszedesebb szelektorok):
+              input[type="password"] - minden input ami "password" tipusu
+              input.nev[type="text"]  - minden olyan input elem aminek van "nev" oszalya es a type attributum erteke az "text"
+            */
+        input[type="text"] {
+            padding: 5px 10px;
+            border: 1px solid #777;
+            /* + betu stilusok, stb. */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--
+   Gazdinfosoknak:
+
+   GET: link?kulcs=ertek&kulcs2=ertek2& ....
+   POST: link  es request body
+   (inspektor network, request/payload)
+   -->
+
+    <form id="kerdoiv" action="https://students.csik.sapientia.ro/~student/webtech/query.php" method="GET"
+        onsubmit="/* js kod */">
+
+        <h3>Kitöltő neve:</h3>
+        <!-- mezot kotelezni: "required" attributum -->
+        <input id="diakneve" type="text" name="diakneve" value="" placeholder="Teljes neved" required>
+
+        <h3>Jövedelmed</h3>
+        <select name="jovedelem">
+            <option value="0">Nincs</option>
+            <option value="1"> 3000 RON</option>
+            <option value="2">3001 - 5000 RON</option>
+            <option value="3"> 5000+ RON</option>
+        </select>
+
+        <h3>Véleményed</h3>
+        <textarea name="velemeny" placeholder="Ird meg a velemenyedet"></textarea>
+
+        <p>
+            <!--  submit button: return false -> nem kuldi el a form-ot; kulonben elkuldi (meg ha nincs is visszateresi ertek) -->
+            <input type="submit" name="submitButtonValue" value="Elküld" onclick="  return FormEllenorzes();  ">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="reset" value="Újrakezd">
+
+            <!-- HTML 5 button -->
+            <button type="button" onclick="/* js kod */">Cimke</button>
+        </p>
+
+    </form>
+
+    <script>
+        function FormEllenorzes() {
+
+            var diakneve = document.getElementById('diakneve');
+            if (diakneve.value.length < 5) {
+                diakneve.style.border = '2px solid red';
+                console.error('Nincs a név mező kitöltve');
+                return false;
+            } else {
+                diakneve.style.border = '';
+            }
+
+            return true;
+        }
+
+    </script>
+</body>
+
+</html>

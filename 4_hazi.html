@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+    <head>
+        <title>HF 04</title>
+        <style>
+            /* ============================ Feladat rész ============================ */
+            .container {
+                min-height: 250px;
+                padding: 20px;
+                border: 1px solid #000;
+                box-sizing: border-box;
+            }
+            .container .box {
+                width: 100px;
+                min-height: 100px;
+                background-color: #2ECC40;
+                border: 1px solid #000;
+                border-radius: 7px;
+                
+                font-size: 32px;
+                text-align: center;
+                line-height: 100px;
+            }
+            .container .boxg {
+                padding: 10px;
+                border: 1px solid #000;
+                border-radius: 7px;
+                box-sizing: border-box;
+            }
+            .container .box.largew { width: 23%; }
+            .container .box.largeh { min-height: 150px; }
+            .container.orange .box { background-color: #FF851B; }
+            .container.blue .box { background-color: #7FDBFF; }
+            .container.red .box { background-color: #FF4136; }
+            .container.gray .box { background-color: #AAAAAA; }
+            .container.silver .box { background-color: #DDDDDD; }
+            /* ============================ Saját rész ============================ */
+            
+            .fel1{
+                display: flex;
+                justify-content: center; 
+                align-items:  center;
+            }
+
+            .fel2{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .fel3{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+            .fel4 {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .fel5 ul{
+                display: flex;
+                justify-content: right;
+            }
+
+            .fel5 a{
+                padding: 10px 15px;
+                text-decoration: underline;
+                color: black;
+            }
+            
+            .fel5 li {
+                margin: 10px;
+            }
+
+            .fel5 a:hover{
+                background-color: darkgray;
+                color: white;
+                text-decoration: none;
+            }
+
+            .w50{
+                width: 50%;
+                margin-bottom: 12px;
+                text-align: justify;
+            }
+
+            h3{
+                font-style: italic;
+            }
+
+            img{
+                width: 100%;
+            }
+
+            .fel6{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+
+            .boxg{
+                box-sizing: border-box; 
+                width: calc(50% - 6px);
+                margin-top: 6px;
+                margin-bottom: 6px;
+            }
+
+            .w100{
+                width: 100%;
+                text-align: justify;
+            }
+
+            .fel6 a{
+                color: red;
+                text-decoration: none;
+            }
+
+            .fel6 a:hover{
+                color: green;
+                text-decoration: underline;
+            }
+
+            /* ============================ Saját rész vége ============================ */
+        </style>
+    </head>
+    
+    <body>
+        <header>
+        </header>
+        
+        <main>
+            <h1>Flexbox HF</h1>
+            <p>Flexbox segítségével megoldandó házi feladat. Ne írjál be plusz CSS osztályokat, extra HTML elemeket, csak a meglévő szerkezetet használd! Minden formázás csak az adott részen legyen érvényes (azaz a szelektorokat ennek megfelelően írd meg).</p>
+            
+            <h2>Feladat 1</h2>
+            <article>
+                <p>Rendezz középre mind vízszintesen, mint függőlegesen.</p>
+                <div class="container fel1">
+                    <div class="box">Közép</div>
+                </div>
+            </article>
+            
+            <h2>Feladat 2</h2>
+            <article>
+                <p>Rendezd az elemeket egysorba vízszintesen, majd középre mind vízszintesen, mint függőlegesen. Az elemek között legyen pontosan 10px távolság.</p>
+                <div class="container red fel2">
+                    <div class="box">a</div>
+                    <div class="box">b</div>
+                    <div class="box">c</div>
+                    <div class="box">d</div>
+                </div>
+            </article>
+            
+            
+            <h2>Feladat 3</h2>
+            <article>
+                <p>Rendezd az elemeket vízszintes irányba. Ha nem férnek ki egy sorban (23% szélesek), akkor törjön meg a sor. Továbbá, a tartalom legyen kihúzva széltől szélig.</p>
+                <div class="container blue fel3">
+                    <div class="box largew">a</div>
+                    <div class="box largew">b</div>
+                    <div class="box largew">c</div>
+                    <div class="box largew">d</div>
+                    <div class="box largew">e</div>
+                    <div class="box largew">f</div>
+                    <div class="box largew">g</div>
+                </div>
+            </article>
+            
+            <h2>Feladat 4</h2>
+            <article>
+                <p>Rendezd az elemeket vízszintes irányba, legyenek kihúzva széltől szélig és legyenek függőlegesen is középen.</p>
+                <div class="container orange fel4">
+                    <div class="box">a</div>
+                    <div class="box largeh">b</div>
+                    <div class="box">c</div>
+                    <div class="box largeh">d</div>
+                    <div class="box largeh">e</div>
+                    <div class="box">f</div>
+                    <div class="box">g</div>
+                </div>
+            </article>
+            
+            <h2>Feladat 5</h2>
+            <article>
+                <p>Rendezd a következő lista elemeit egysorba és jobboldalra. Minden linken legyen egy 10px padding felfele és lefele, valamint 15px jobbra/balra. Az elemek között legyen 10px távolság (margin). A linkek ne legyenek aláhúzva, a színük pedig legyen fekete és aláhúzva. Ha az egérrel az elem felé megyünk, akkor legyen a háttérszíne egy sötétszürke szín, az írás pedig fehér és ne legyen aláhúzva.</p>
+                <div class="container blue fel5">
+                    <ul>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                        <li><a href="#">Link 5</a></li>
+                    </ul>
+                </div>
+            </article>
+            
+            <h2>Feladat 6</h2>
+            <article>
+                <p>
+                    Formázd a következő tartalmat:
+                    <ul>
+                        <li>Az első két doboz legyen egyenként 50% széles, míg a második doboz 100% széles.</li>
+                        <li>A dobozok között legyen pontosan 12px távolság.</li>
+                        <li>Minden dobozban a szöveg legyen kihúzva széltől szélig</li>
+                        <li>A címek legyenek dőlt betűvel.</li>
+                        <li>A képek szélessége legyen mindig a doboz szélessége.</li>
+                        <li>A linkek legyenek (tetszés szerint) egyfajta szín, majd az egérrel rajta egy másik szín. Csak akkor legyenek aláhúzva ha az egérrel felette vagyunk.</li>
+                    </ul>
+                </p>
+                <div class="container fel6">
+                    <div class="boxg w50">
+                        <h3>Linkek</h3>
+                        <ul>
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 2</a></li>
+                            <li><a href="#">Link 3</a></li>
+                        </ul>
+                    </div>
+                    <div class="boxg w50">
+                        <h3>Kép szöveggel</h3>
+                        <p><img src="https://placeimg.com/640/480/any">Vivamus nisi ante, pharetra in nibh sed, suscipit ultrices felis. Sed sit amet eros vulputate, blandit purus in, faucibus enim. Nullam dignissim justo quis metus bibendum mollis id eu nisi.</p>
+                    </div>
+                    <div class="boxg w100">
+                        <h3>Szöveg címmel</h3>
+                        <p>Morbi vel interdum nisi. Cras et ante ut leo dapibus sodales. Suspendisse auctor eros arcu, eget imperdiet magna varius id. Nullam tincidunt, est eu hendrerit semper, massa mi volutpat neque, id pellentesque nisi libero quis justo.</p>
+                    </div>
+                </div>
+            </article>
+            
+        </main>
+        
+        <footer>
+        </footer>
+        
+    </body>
+</html>

@@ -1,0 +1,120 @@
+.wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+article {
+    margin-bottom: 25px;
+    text-align: justify;
+    line-height: 150%;
+    padding: 0 45px 0 45px;
+
+}
+
+.highlight {
+    background-color: #F7E0C6;
+    padding: 10px 45px 25px 45px;
+}
+
+h2 {
+    font-family: "Trade Winds", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    color: #4CB9E0;
+}
+
+a:hover {
+    color: #E13535;
+}
+
+.highlighted-text {
+    background-color: #40A622;
+    margin: 7px;
+}
+
+.szoveg_keppel_baloldalt img {
+    float: left;
+    margin-right: 20px;
+}
+
+.szoveg_keppel_jobboldalt img {
+    float: right;
+    margin-left: 20px;
+}
+
+.highlight img {
+    float: left;
+    margin-right: 20px;
+}
+
+.listak ul {
+    list-style: square;
+}
+
+.paragraphs_container {
+    columns: 3;
+    column-gap: 60px;
+}
+
+.images-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.images-container img {
+    width: calc(33.33% - 10px); 
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+    .szoveg_keppel_baloldalt img {
+        width: 100%;
+    }
+
+    .szoveg_keppel_jobboldalt img {
+        width: 100%;
+    }
+
+    .highlight img {
+        width: 100%;
+    }
+
+    article {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .images-container img {
+        width: calc(50% - 10px);
+    }
+
+    .paragraphs_container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .paragraphs_container span {
+        margin-bottom: 10px;
+    }
+
+    .highlight {
+        margin: 0 -8px 0 -8px;
+        padding: 10px 70px 25px 70px;
+    }
+}
+
+@media (max-width: 600px) {
+    .images-container img {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+}
+
+body {
+    min-width: 320px;
+}

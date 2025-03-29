@@ -1,0 +1,245 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>6. házi</title>
+
+    <style>
+        .wrapper {
+            text-align: center;
+        }
+
+        .empty-space {
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="6_hazi.js"></script>
+    <form id="foci-form" action="https://students.csik.sapientia.ro/~student/webtech/query.php" method="get" onsubmit="return FormEllenorzes()"> 
+        <div class="wrapper">
+            <header>
+                <h1>Labdarúgás Kérdőív</h1>
+            </header>
+
+            <main>
+                <article class="empty-space">
+                    <p>Adja meg a nevét!</p>
+                    <label for="nev">Kitöltő neve:</label>
+                    <input id="diakneve" type="text" name="nev">
+                </article>
+
+                <article class="empty-space">
+                    <h2>Futball szeretet</h2>
+                    <p>Határozza meg, mennyire szereti ezt a sportot.</p>
+                    <label for="foci-szeretet">Mennyire szereti a futballt?</label>
+                    <br>
+                    <br>
+                    <input type="radio" name="foci-szeretet">Nem szeretek semmilyen sportot
+                    <br>
+                    <br>
+                    <input type="radio" name="foci-szeretet">Nem túl nagyon
+                    <br>
+                    <br>
+                    <input type="radio" name="foci-szeretet">Átlagosan
+                    <br>
+                    <br>
+                    <input type="radio" name="foci-szeretet">Kifejezetten szeretem
+                    <br>
+                    <br>
+                    <input type="radio" name="foci-szeretet">Imádom!
+                </article>
+
+                <article class="empty-space">
+                    <h2>Futball követés</h2>
+                    <p>Határozza meg, mennyire köti le ez a sport.</p>
+                    <label for="foci-nezes">Milyen gyakran néz futball mérkőzéseket?</label>
+                    <br>
+                    <br>
+                    <input type="radio" name="foci-nezes">Ritkán
+                    <br>
+                    <br>
+                    <input type="radio" name="foci-nezes">Hetente egyszer
+                    <br>
+                    <br>
+                    <input type="radio" name="foci-nezes">Többször hetente
+                    <br>
+                    <br>
+                    <input type="radio" name="foci-nezes">A kedvenc csapataim meccseit megnézem, és ha más
+                    komoly
+                    vagy nagy meccs van, akkor azt is.
+                </article>
+
+                <article class="empty-space">
+                    <h2>Klubok (foci csapatok) követése</h2>
+                    <p>Jelölje be, hány darab klubot követ.</p>
+                    <label for="klubok-szama">Hány klubot követ?</label>
+                    <br>
+                    <br>
+                    <input id="klubok-szama" type="number" name="klubok-szama" min="0" max="50">
+                </article>
+
+                <article class="empty-space">
+                    <h2>Klubok (foci csapatok) kiválasztása</h2>
+                    <p>Jelölje be, hogy a magyar nemzetiségű játékosok meghatározóak-e a klub követésének
+                        kiválasztásánál.
+                    </p>
+                    <p>CSAK EGY VÁLASZT PIPÁLJON KI !!!</p>
+                    <label for="klubok-szama">Azért is követ más külföldi csapatokat, mert játszik benne egy magyar
+                        játékos
+                        is például?</label>
+                    <br>
+                    <br>
+                    <input type="checkbox" name="klubok-szama">IGEN
+                    <br>
+                    <br>
+                    <input type="checkbox" name="klubok-szama">IGEN, de olyan külföldi csapatokat is követek,
+                    amelyekben nincs magyar nemzetiségű játékos.
+                    <br>
+                    <br>
+                    <input type="checkbox" name="klubok-szama">NEM
+                </article>
+
+                <article class="empty-space">
+                    <h2>Kedvenc klubcsapatai</h2>
+                    <p>Írja be az első három kedvenc focicsapatát, ha csak egy van, akkor csak azt, de ha egy sincs,
+                        akkor
+                        is egyet írjon be.</p>
+                    <label for="kedvenc-klub">Top 3 kedvenc klubcsapatom:</label>
+                    <br>
+                    <br>
+                    1. <input type="text" name="kedvenc-klub">
+                    <br>
+                    <br>
+                    2. <input type="text" name="kedvenc-klub">
+                    <br>
+                    <br>
+                    3. <input type="text" name="kedvenc-klub">
+                </article>
+
+                <article class="empty-space">
+                    <h2>Kedvenc labdarúgói</h2>
+                    <p>Írja be az első három kedvenc labdarúgóját, ha csak egy van, akkor csak azt, de ha egy sincs,
+                        akkor
+                        is egyet írjon be.</p>
+                    <label for="kedvenc-focista">Top 3 kedvenc labdarúgóm:</label>
+                    <br>
+                    <br>
+                    1. <input type="text" name="kedvenc-focista">
+                    <br>
+                    <br>
+                    2. <input type="text" name="kedvenc-focista">
+                    <br>
+                    <br>
+                    3. <input type="text" name="kedvenc-focista">
+                </article>
+
+
+                <article class="empty-space">
+                    <h2>Kedvenc edzői</h2>
+                    <p>Írja be az első három kedvenc labdarúgás edzőjét, ha csak egy van, akkor csak azt, de ha egy
+                        sincs,
+                        akkor is egyet írjon be.</p>
+                    <label for="kedvenc-edzo">Top 3 kedvenc klubcsapatom:</label>
+                    <br>
+                    <br>
+                    1. <input type="text" name="kedvenc-edzo">
+                    <br>
+                    <br>
+                    2. <input type="text" name="kedvenc-edzo">
+                    <br>
+                    <br>
+                    3. <input type="text" name="kedvenc-edzo">
+                </article>
+
+                <article class="empty-space">
+                    <h2>Magyarok válogatott játékosok felismerése</h2>
+                    <p>Pipálja ki, ha ismeri az adott magyar válogatott játékost.</p>
+                    <div class="players">
+                        <img src="https://assets.telex.hu/images/20231113/1699859203-temp-Hhjndi_cikktorzs.jpg" alt=""
+                            width="500">
+                        <br>
+                        <input class="valasz" type="checkbox">Ismerem ✅
+                        <input class="valasz" type="checkbox">Nem ismerem ❌
+                    </div>
+                    <br>
+                    <div class="players">
+                        <img src="https://cdn.origo.hu/2023/12/APN2W1jMZi0_XAhApAIBOxUfz4GXp95c9tzYdNOUzhs/fill/1347/758/no/1/aHR0cHM6Ly9jbXNjZG4uYXBwLmNvbnRlbnQucHJpdmF0ZS9jb250ZW50LzkxODc5Mjk3ZGQwMDQ4NTdhOTE5NmZjOWE2ZDg3YzVh.png"
+                            alt="" width="500">
+                        <br>
+                        <input class="valasz" type="checkbox">Ismerem ✅
+                        <input class="valasz" type="checkbox">Nem ismerem ❌
+                    </div>
+                    <br>
+                    <div class="players">
+                        <img src="https://varosikurir.hu/wp-content/uploads/2023/06/varosikurir-varga-barnabas-02.jpg"
+                            alt="" width="500">
+                        <br>
+                        <input class="valasz" type="checkbox">Ismerem ✅
+                        <input class="valasz" type="checkbox">Nem ismerem ❌
+                    </div>
+                    <br>
+                    <div class="players">
+                        <img src="https://igenyesferfi.hu/wp-content/uploads/2024/03/dardai_marton_magyar_labdarugo_valogatott_sporthirek_online_ferfimagazin_2024-930x620.jpeg"
+                            alt="" width="500">
+                        <br>
+                        <input class="valasz" type="checkbox">Ismerem ✅
+                        <input class="valasz" type="checkbox">Nem ismerem ❌
+                    </div>
+                    <br>
+                    <div class="players">
+                        <img src="https://cdn.cms.mtv.hu/wp-content/uploads/sites/10/2023/11/DEBRE20231014306-scaled.jpg"
+                            alt="" width="500">
+                        <br>
+                        <input class="valasz" type="checkbox">Ismerem ✅
+                        <input class="valasz" type="checkbox">Nem ismerem ❌
+                    </div>
+                </article>
+
+                <article class="empty-space">
+                    <h2>Európa-bajnokság</h2>
+                    <p>Őszintén és relatívan gondolja át ezt a kérdést és elfogulás nélkül válaszoljon.</p>
+                    <label for="eb">Meddig jut a válogatott az idei júniusi labdarúgó-Európa-bajnokságon?</label>
+                    <br>
+                    <br>
+                    <input type="radio" name="eb">Kiesünk a csoportból...
+                    <br>
+                    <br>
+                    <input type="radio" name="eb">Továbbjutunk a csoportból!
+                    <br>
+                    <br>
+                    <input type="radio" name="eb">Nyolcaddöntőben vagy a negyeddöntőben esünk ki.
+                    <br>
+                    <br>
+                    <input type="radio" name="eb">A döntőig menetelünk, és ott pedig bármi megtörténhet.
+                </article>
+
+                <article>
+                    <h2>VB álom</h2>
+                    <p>Addig húzza a csúszkát, amennyi sört gondol, hogy elfogyasztana, ha kijutna a magyar válogatott a
+                        VB-re.</p>
+                    <label for="vb">Hány sört inna meg, ha kijutnánk a VB-re?</label>
+                    <br>
+                    <input type="range" id="ertek" min="1" max="100" value="1">
+                    <br>
+                    <span id="csuszka-ertek">1</span>
+                    <br>
+                    <span id="emoji">🍺</span>
+                    <script src="sorszamolo.js"></script>
+                </article>
+                <br>
+                <p>
+                    <input type="submit" name="submitButtonValue" value="Elküld">
+                </p>
+            </main>
+        </div>
+    </form>
+
+
+
+
+</body>
+
+
+</html>

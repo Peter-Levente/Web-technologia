@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+    <style>
+            article {
+                    /* elso megoldals: overflow */
+                    overflow: hidden;
+
+                    /* masodik: display */
+                    display: table;
+                    width: 100%;
+
+                    text-align: justify;
+            }
+            article img {
+                    float: left;
+                    width: 40%;
+                    margin: 0 20px 10px 0;
+            }
+            article.kepjobbra img {
+                    float: right;
+                    margin: 0 0 10px 20px;
+            }
+
+            .haromoszlop {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    /* flex-direction: row;  -> alap, egysorba */
+                   /*  gap: 20px; */
+            }
+            .haromoszlop article {
+                    width: calc(33.33% - 14px);
+            }
+            .haromoszlop article img {
+                    width: 100%;
+                    margin-right: 0;
+            }
+
+            @media (max-width: 900px) {
+                    article img { width: 50%; }
+                    .haromoszlop article {
+                            width: calc(50% - 10px);
+                    }
+            }
+
+            @media (max-width: 600px) {
+                    article img { width: 100%; }
+                    .haromoszlop article {
+                            width: 100%;
+                    }
+            }
+
+    </style>
+</head>
+<body>
+
+    <main>
+
+            <article>
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+                    <div>
+                            <img src="https://picsum.photos/600/400?random=1" alt="">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac turpis molestie, dignissim velit tempor, dictum mi. Curabitur eleifend ultrices feugiat. Vivamus faucibus risus tempor diam bibendum, ut luctus orci tempor. Phasellus rutrum, magna at posuere ornare, ante justo elementum nisl, quis pharetra risus ex a leo. Duis varius justo vitae enim vehicula, quis fringilla dui interdum. Sed id sagittis urna. Vivamus tempus varius risus vestibulum molestie.
+                    </div>
+            </article>
+
+            <article class="kepjobbra">
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+                    <div>
+                            <img src="https://picsum.photos/600/400?random=1" alt="">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac turpis molestie, dignissim velit tempor, dictum mi. Curabitur eleifend ultrices feugiat. Vivamus faucibus risus tempor diam bibendum, ut luctus orci tempor. Phasellus rutrum, magna at posuere ornare, ante justo elementum nisl, quis pharetra risus ex a leo. Duis varius justo vitae enim vehicula, quis fringilla dui interdum. Sed id sagittis urna. Vivamus tempus varius risus vestibulum molestie.
+                    </div>
+            </article>
+
+            <section class="haromoszlop">
+
+                    <article>
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+                        <div>
+                                <img src="https://picsum.photos/600/400?random=1" alt="">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac turpis molestie, dignissim velit tempor, dictum mi. Curabitur eleifend ultrices feugiat. Vivamus faucibus risus tempor diam bibendum, ut luctus orci tempor. Phasellus rutrum, magna at posuere ornare, ante justo elementum nisl, quis pharetra risus ex a leo. Duis varius justo vitae enim vehicula, quis fringilla dui interdum. Sed id sagittis urna. Vivamus tempus varius risus vestibulum molestie.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac turpis molestie, dignissim velit tempor, dictum mi. Curabitur eleifend ultrices feugiat. Vivamus faucibus risus tempor diam bibendum, ut luctus orci tempor. Phasellus rutrum, magna at posuere ornare, ante justo elementum nisl, quis pharetra risus ex a leo. Duis varius justo vitae enim vehicula, quis fringilla dui interdum. Sed id sagittis urna. Vivamus tempus varius risus vestibulum molestie.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac turpis molestie, dignissim velit tempor, dictum mi. Curabitur eleifend ultrices feugiat. Vivamus faucibus risus tempor diam bibendum, ut luctus orci tempor. Phasellus rutrum, magna at posuere ornare, ante justo elementum nisl, quis pharetra risus ex a leo. Duis varius justo vitae enim vehicula, quis fringilla dui interdum. Sed id sagittis urna. Vivamus tempus varius risus vestibulum molestie.
+                        </div>
+                    </article>
+
+                    <article>
+                            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+                            <div>
+                                    <img src="https://picsum.photos/600/400?random=1" alt="">
+                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac turpis molestie, dignissim velit tempor, dictum mi. Curabitur eleifend ultrices feugiat. Vivamus faucibus risus tempor diam bibendum, ut luctus orci tempor. Phasellus rutrum, magna at posuere ornare, ante justo elementum nisl, quis pharetra risus ex a leo. Duis varius justo vitae enim vehicula, quis fringilla dui interdum. Sed id sagittis urna. Vivamus tempus varius risus vestibulum molestie.
+                            </div>
+                    </article>
+
+                    <article>
+                            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+                            <div>
+                                    <img src="https://picsum.photos/600/400?random=1" alt="">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac turpis molestie, dignissim velit tempor, dictum mi. Curabitur eleifend ultrices feugiat. Vivamus faucibus risus tempor diam bibendum, ut luctus orci tempor. Phasellus rutrum, magna at posuere ornare, ante justo elementum nisl, quis pharetra risus ex a leo. Duis varius justo vitae enim vehicula, quis fringilla dui interdum. Sed id sagittis urna. Vivamus tempus varius risus vestibulum molestie.
+                            </div>
+                    </article>
+
+            </section>
+
+    </main>
+
+</body>
+</html>

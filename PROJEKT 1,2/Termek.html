@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Football Shop-Termék</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="PROJEKT.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <nav class="fejlec">
+        <div class="cim">
+          <h1>Football Shop</h1>
+          <a id="kosar-ikon">
+            <i class="fa-solid fa-basket-shopping"></i>
+          </a>
+          <a href="index.html" id="fooldal-ikon">
+            <i class="fa-solid fa-house"></i>
+          </a>
+        </div>
+        <div class="termek-item-cim">
+          <h3>TERMÉK ADATAI</h3>
+        </div>
+        <div class="kosar" id="kosar"></div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="termek-container">
+        <div class="termek-item" id="termek-item"></div>
+        <div class="termek-adatok">
+          <div class="adatok" id="adatok"></div>
+          <table id="merettablazat">
+            <tr>
+              <td><button class="meret-gomb" data-meret="S">S</button></td>
+              <td><button class="meret-gomb" data-meret="M">M</button></td>
+              <td><button class="meret-gomb" data-meret="L">L</button></td>
+              <td><button class="meret-gomb" data-meret="XL">XL</button></td>
+              <td><button class="meret-gomb" data-meret="XXL">XXL</button></td>
+            </tr>
+          </table>
+          <input type="number" class="darab" id="darab" min="1" max="50" value="1">
+          <input type="button" class="addKosar_btn" id="addKosarGomb" value="Kosárba teszem">
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="lablec">
+        <p>Minden jog fenntartva ©Football Shop 2024</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="PROJEKT.js"></script>
+</body>
+
+</html>

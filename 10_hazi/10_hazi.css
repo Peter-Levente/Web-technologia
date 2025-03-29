@@ -1,0 +1,124 @@
+body {
+    margin: 50px;
+}
+
+.wrapper {
+    width: 1286px;
+    margin: 0 auto;
+}
+
+.celelem {
+    width: auto;
+}
+
+.celelem {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hotel {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    width: calc(25% - 23px);
+    margin-bottom: 30px;
+    box-sizing:border-box ;
+}
+
+.hotel:last-child {
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+span {
+    display: block;
+}
+
+input {
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+.inputok {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: center;
+}
+
+.number {
+    width: 50px;
+}
+
+@media (max-width: 1286px) {
+    .wrapper {
+        width: auto;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1000px) {
+    .hotel {
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 3%;
+        display: flex;
+        flex-direction: column;
+        width: calc(33.33% - 20px);
+        margin-bottom: 30px;
+        box-sizing: border-box;
+    }
+
+    .hotel:last-child {
+        margin-bottom: 30px;
+        margin-right: 0;
+        margin-left: auto;
+    }
+}
+
+
+@media (max-width: 837px) {
+    .hotel {
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 3%;
+        display: flex;
+        flex-direction: column;
+        width: calc(50% - 15px);
+        margin-bottom: 30px;
+        box-sizing: border-box;
+    }
+
+    .hotel:last-child {
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .hotel {
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 3%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .hotel:last-child {
+        margin-bottom: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

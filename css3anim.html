@@ -1,0 +1,62 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <style>
+
+        @keyframes kockaanim {
+                0% { top: 10px; left: 10px; }
+                60% { top: 10px; left: calc(100% - 110px); }
+                100% { top: calc(100% - 110px); left: calc(100% - 110px); }
+        }
+
+        .kocka {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                cursor: pointer;
+                transition: all .5s;
+
+                animation: kockaanim 10s;
+                animation-delay: 2s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+
+                position: fixed;
+                top: 10px;
+                left: 10px;
+        }
+        .kocka:hover {
+
+                background-color: blue;
+        }
+  </style>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script>
+            $(document).ready( () => {
+                    console.log( $('.kocka') );
+            } );
+
+        </script>
+
+  <title></title>
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+</head>
+
+<body>
+
+    <div class="kocka"></div>
+
+
+    <script>
+            $(document).ready( () => {
+                    console.log( $('.kocka') );
+            } );
+
+        </script>
+</body>
+</html>

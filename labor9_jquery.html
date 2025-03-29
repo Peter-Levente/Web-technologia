@@ -1,0 +1,165 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>jQuery</title>
+  <meta name="description" content="HTML5">
+  <meta name="author" content="Author">
+
+  <link rel="stylesheet" href="css/style.css?v=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+    .slideMenu {
+        width: 28px;
+        position: fixed;
+        right: -50px; /* -4px -50px */
+        top: 50%;
+        translate: 0 -50%;
+        transition: right .5s;
+
+        border: 1px solid #888;
+        padding: 10px;
+        border-radius: 5px;
+
+        font-size: 24px;
+        text-align: center;
+    }
+    .slideMenu.opened { right: -4px; }
+    .slideMenu a {
+        margin: 5px 0;
+        display: inline-block;
+        color: black;
+        text-decoration: none;
+    }
+    .slideMenu .button {
+        position: absolute;
+        left: -42px;
+        top: 50%;
+        translate: 0 -50%;
+        border: 1px solid #888;
+        border-radius: 50%;
+        padding: 5px;
+        cursor: pointer; /* fontos a touch miatt apple termekeken */
+    }
+  </style>
+
+  
+
+</head>
+
+<body>
+
+  <div class="slideMenu">
+      <a href="#" class="fa-solid fa-house"></a>
+      <a href="#" class="fa-solid fa-hippo"></a>
+      <a href="#" class="fa-solid fa-calendar-days"></a>
+      <a href="#" class="fa-solid fa-film"></a>
+
+      <div id="slideMenuButton" class="button fa-solid fa-angles-left"></div>
+  </div>
+    
+
+  <article>
+    <h2>jQuery</h2>
+    <div>
+      <h3>DOM elem manupulalasa</h3>
+      <ul>
+        <li>.append(), .prepend()</li>
+        <li>.remove()</li>
+        <li>.html(), .html(htmlStr)</li>
+        <li>.attr(key), .attr(key, val)</li>
+      </ul>
+
+      <h3>Class</h3>
+      <ul>
+        <li>.addClass(str)</li>
+        <li>.removeClass(str)</li>
+        <li>.hasClass(str)</li>
+        <li>.toggleClass(str)</li>
+      </ul>
+
+      <h3>Data</h3>
+      <ul>
+        <li>.data(key, val)</li>
+        <li>.parent()</li>
+        <li>.closest()</li>
+        <li>.children(szelektor)</li>
+      </ul>
+
+      <h3>Animation</h3>
+      <ul>
+        <li>.animate( properties [, duration ] [, easing ] [, complete ] )</li>
+        <li>.slideDown(), .slideUp(), .slideToggle()</li>
+      </ul>
+
+      <h3>Esemenyek</h3>
+      <ul>
+        <li>.on(esemeny, fn)</li>
+        <li>.click(), .click(fn)</li>
+      </ul>
+
+      <h3>Ajax</h3>
+      <ul>
+        <li>TODO</li>
+      </ul>
+
+      $.fn() , $.fn(param)
+      $.fn(key) , $.fn(key, value)
+    </div>
+  </article>
+  
+  <article class="highlight valami valami2">
+    <h2>Teszt cim</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non dolor rhoncus, dignissim sem ac, sagittis ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras varius enim ut justo efficitur porta. Nullam porta vestibulum augue quis commodo. Nam eleifend quis nisl ut fermentum. Suspendisse non volutpat sem. Donec nec tempor neque. Pellentesque sodales felis quis tortor sollicitudin feugiat. Donec eleifend non diam euismod finibus. Duis dignissim dapibus turpis sit amet elementum. Aliquam erat volutpat. Morbi euismod massa vel sem tristique, dapibus lacinia quam faucibus. Cras id massa risus. Proin in enim aliquam sapien mattis varius sed vel nibh. Duis sit amet risus nec arcu lobortis fringilla.</p>
+  </article>
+
+  <article>
+    <h2>Teszt cim</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non dolor rhoncus, dignissim sem ac, sagittis ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras varius enim ut justo efficitur porta. Nullam porta vestibulum augue quis commodo. Nam eleifend quis nisl ut fermentum. Suspendisse non volutpat sem. Donec nec tempor neque. Pellentesque sodales felis quis tortor sollicitudin feugiat. Donec eleifend non diam euismod finibus. Duis dignissim dapibus turpis sit amet elementum. Aliquam erat volutpat. Morbi euismod massa vel sem tristique, dapibus lacinia quam faucibus. Cras id massa risus. Proin in enim aliquam sapien mattis varius sed vel nibh. Duis sit amet risus nec arcu lobortis fringilla.</p>
+  </article>
+
+  <article>
+    <h2>Teszt cim</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non dolor rhoncus, dignissim sem ac, sagittis ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras varius enim ut justo efficitur porta. Nullam porta vestibulum augue quis commodo. Nam eleifend quis nisl ut fermentum. Suspendisse non volutpat sem. Donec nec tempor neque. Pellentesque sodales felis quis tortor sollicitudin feugiat. Donec eleifend non diam euismod finibus. Duis dignissim dapibus turpis sit amet elementum. Aliquam erat volutpat. Morbi euismod massa vel sem tristique, dapibus lacinia quam faucibus. Cras id massa risus. Proin in enim aliquam sapien mattis varius sed vel nibh. Duis sit amet risus nec arcu lobortis fringilla.</p>
+  </article>
+
+  <article>
+    <h2>Teszt cim</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non dolor rhoncus, dignissim sem ac, sagittis ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras varius enim ut justo efficitur porta. Nullam porta vestibulum augue quis commodo. Nam eleifend quis nisl ut fermentum. Suspendisse non volutpat sem. Donec nec tempor neque. Pellentesque sodales felis quis tortor sollicitudin feugiat. Donec eleifend non diam euismod finibus. Duis dignissim dapibus turpis sit amet elementum. Aliquam erat volutpat. Morbi euismod massa vel sem tristique, dapibus lacinia quam faucibus. Cras id massa risus. Proin in enim aliquam sapien mattis varius sed vel nibh. Duis sit amet risus nec arcu lobortis fringilla.</p>
+  </article>
+
+  <article>
+    <h2>Teszt cim</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non dolor rhoncus, dignissim sem ac, sagittis ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras varius enim ut justo efficitur porta. Nullam porta vestibulum augue quis commodo. Nam eleifend quis nisl ut fermentum. Suspendisse non volutpat sem. Donec nec tempor neque. Pellentesque sodales felis quis tortor sollicitudin feugiat. Donec eleifend non diam euismod finibus. Duis dignissim dapibus turpis sit amet elementum. Aliquam erat volutpat. Morbi euismod massa vel sem tristique, dapibus lacinia quam faucibus. Cras id massa risus. Proin in enim aliquam sapien mattis varius sed vel nibh. Duis sit amet risus nec arcu lobortis fringilla.</p>
+  </article>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script>
+    $('#slideMenuButton').on('click', function(event){
+        // console.log(this);
+        // this -> #slideMenuButton elem (jQuery specifikus)
+
+        console.log(event);
+        var button = event.target; // Ez nem jQuery objektum
+        var slideMenu = $(button).closest('.slideMenu'); // Ez mar az
+
+        // $(slideMenu) de lehet siman 'slideMenu' valtozo (mert ez egy jQuery
+        // objektum)
+        if(slideMenu.hasClass('opened')) {
+            // be kell csukni
+            slideMenu.removeClass('opened');
+            $(button).removeClass('fa-angles-right').addClass('fa-angles-left');
+        } else {
+            // ki kell nyitni
+            slideMenu.addClass('opened');
+            $(button).removeClass('fa-angles-left').addClass('fa-angles-right');
+        }
+    });
+    
+  </script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

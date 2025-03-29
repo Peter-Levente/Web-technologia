@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>10. Hazi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="10_hazi.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="10_hazi.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <ul class="inputok">
+            <li>Name: <input type="text" id="name"></li>
+            <li>Mininum stars: <input type="number" id="minstars" class="number" min="1" max="5"></li>
+            <li>Maximum stars: <input type="number" id="maxstars" class="number" min="1" max="5"></li>
+            <li>Mininum rating: <input type="number" id="minrating" class="number" min="1" max="10"></li>
+            <li>Maximum rating: <input type="number" id="maxrating" class="number" min="1" max="10"></li>
+            <li>Mininum price: <input type="number" id="minprice" class="number" min="100" max="1000"></li>
+            <li>Maximum price:<input type="number" id="maxprice" class="number" min="100" max="1000"></li>
+            <li><input type="button" id="keres-gomb" onclick="adatListaz()" value="Search"></li>
+        </ul>
+
+        <article class="celelem"></article>
+    </div>
+</body>
+
+</html>
